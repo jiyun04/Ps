@@ -1,38 +1,118 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>지역 포토존</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>지역별 포토존 사진 업로드</h1>
-    </header>
-    
-    <main>
-        <section>
-            <h2>사진 업로드</h2>
-            <form action="" method="POST" enctype="multipart/form-data">
-                <label for="region">지역 선택:</label>
-                <select id="region" name="region">
-                    <option value="서울">서울</option>
-                    <option value="부산">부산</option>
-                    <option value="대구">대구</option>
-                    <option value="광주">광주</option>
-                </select>
+<main>
+    <section class="gallery">
+        <h2>사진 갤러리</h2>
 
-                <label for="photo">사진 선택:</label>
-                <input type="file" id="photo" name="photo">
+        <!-- 서울 -->
+        <div class="photo-category">
+            <h3>서울</h3>
+            <img src="seoul1.jpg" alt="서울 포토존">
+            <img src="seoul2.jpg" alt="서울 포토존">
+            <img src="seoul3.jpg" alt="서울 포토존">
+        </div>
 
-                <button type="submit">업로드</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>© 2025 지역 포토존</p>
-    </footer>
-</body>
-</html>
+        <!-- 부산 -->
+        <div class="photo-category">
+            <h3>부산</h3>
+            <img src="busan1.jpg" alt="부산 포토존">
+            <img src="busan2.jpg" alt="부산 포토존">
+            <img src="busan3.jpg" alt="부산 포토존">
+        </div>
+
+        <!-- 대구 -->
+        <div class="photo-category">
+            <h3>대구</h3>
+            <img src="daegu1.jpg" alt="대구 포토존">
+            <img src="daegu2.jpg" alt="대구 포토존">
+            <img src="daegu3.jpg" alt="대구 포토존">
+        </div>
+
+        <!-- 광주 -->
+        <div class="photo-category">
+            <h3>광주</h3>
+            <img src="gwangju1.jpg" alt="광주 포토존">
+            <img src="gwangju2.jpg" alt="광주 포토존">
+            <img src="gwangju3.jpg" alt="광주 포토존">
+        </div>
+
+        <!-- 인천 -->
+        <div class="photo-category">
+            <h3>인천</h3>
+            <img src="incheon1.jpg" alt="인천 포토존">
+            <img src="incheon2.jpg" alt="인천 포토존">
+            <img src="incheon3.jpg" alt="인천 포토존">
+        </div>
+
+        <!-- 대전 -->
+        <div class="photo-category">
+            <h3>대전</h3>
+            <img src="daejeon1.jpg" alt="대전 포토존">
+            <img src="daejeon2.jpg" alt="대전 포토존">
+            <img src="daejeon3.jpg" alt="대전 포토존">
+        </div>
+
+        <!-- 울산 -->
+        <div class="photo-category">
+            <h3>울산</h3>
+            <img src="ulsan1.jpg" alt="울산 포토존">
+            <img src="ulsan2.jpg" alt="울산 포토존">
+            <img src="ulsan3.jpg" alt="울산 포토존">
+        </div>
+
+        <!-- 경기도 -->
+        <div class="photo-category">
+            <h3>경기도</h3>
+            <img src="gyeonggi1.jpg" alt="경기도 포토존">
+            <img src="gyeonggi2.jpg" alt="경기도 포토존">
+            <img src="gyeonggi3.jpg" alt="경기도 포토존">
+        </div>
+
+        <!-- 강원도 -->
+        <div class="photo-category">
+            <h3>강원도</h3>
+            <img src="gangwon1.jpg" alt="강원도 포토존">
+            <img src="gangwon2.jpg" alt="강원도 포토존">
+            <img src="gangwon3.jpg" alt="강원도 포토존">
+        </div>
+
+        <!-- 전라북도 -->
+        <div class="photo-category">
+            <h3>전라북도</h3>
+            <img src="jeonbuk1.jpg" alt="전라북도 포토존">
+            <img src="jeonbuk2.jpg" alt="전라북도 포토존">
+            <img src="jeonbuk3.jpg" alt="전라북도 포토존">
+        </div>
+
+        <!-- 전라남도 -->
+        <div class="photo-category">
+            <h3>전라남도</h3>
+            <img src="jeonnam1.jpg" alt="전라남도 포토존">
+            <img src="jeonnam2.jpg" alt="전라남도 포토존">
+            <img src="jeonnam3.jpg" alt="전라남도 포토존">
+        </div>
+
+        <!-- 충청북도 -->
+        <div class="photo-category">
+            <h3>충청북도</h3>
+            <img src="chungbuk1.jpg" alt="충청북도 포토존">
+            <img src="chungbuk2.jpg" alt="충청북도 포토존">
+            <img src="chungbuk3.jpg" alt="충청북도 포토존">
+        </div>
+
+        <!-- 충청남도 -->
+        <div class="photo-category">
+            <h3>충청남도</h3>
+            <img src="chungnam1.jpg" alt="충청남도 포토존">
+            <img src="chungnam2.jpg" alt="충청남도 포토존">
+            <img src="chungnam3.jpg" alt="충청남도 포토존">
+        </div>
+
+        <!-- 제주도 -->
+        <div class="photo-category">
+            <h3>제주도</h3>
+            <img src="jeju1.jpg" alt="제주도 포토존">
+            <img src="jeju2.jpg" alt="제주도 포토존">
+            <img src="jeju3.jpg" alt="제주도 포토존">
+        </div>
+
+    </section>
+</main>
