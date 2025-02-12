@@ -1,35 +1,105 @@
-/* 갤러리 스타일링 */
-.gallery {
-    margin-top: 30px;
+/* 전체 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* 배경과 기본 설정 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* 밝은 배경색 */
+    color: #333; /* 어두운 텍스트 색상 */
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #4CAF50; /* 녹색 배경 */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 업로드 폼 스타일 */
+.upload-form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.upload-form input, .upload-form select, .upload-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.upload-form button:hover {
+    background-color: #45a049;
+}
+
+/* 갤러리 레이아웃 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열로 배치 */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* 각 지역별 사진 스타일 */
 .photo-category {
-    margin-bottom: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .photo-category h3 {
-    font-size: 2em;
     text-align: center;
-    margin-bottom: 20px;
-    color: #4CAF50; /* 제목 색상 */
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #4CAF50;
 }
 
 .photo-category img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
+/* 이미지 hover 효과 */
 .photo-category img:hover {
-    transform: scale(1.05); /* 이미지 확대 효과 */
+    transform: scale(1.05);
 }
 
-/* 갤러리 레이아웃: 그리드로 이미지 배치 */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+/* 푸터 스타일 */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
